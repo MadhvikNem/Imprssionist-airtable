@@ -1,0 +1,166 @@
+
+/* body{
+
+  display:flex; 
+  padding: 10px;
+ padding-right: 100px;
+   
+  } */
+
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('ragila-webfont.woff'); 
+  
+       
+}
+
+
+
+  h1{
+    font-family:'MyWebFont';
+    font-style:bolder;
+    font-size: 200px;
+    color:rgb(255, 255, 255);
+    text-align: left;
+    margin: 2px;
+    line-height: 70%;
+    opacity: 90%;
+    
+    
+    
+  }
+
+  p{
+    font-family:'MyWebFont';
+    font-style:lighter;
+    font-size: 70px;
+    color:rgb(255, 255, 255);
+    text-align: left;
+    margin: 2px;
+    line-height: 94%;
+    opacity: 90%;
+  }
+  
+  body {
+    font-family:europa,sans-serif;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    /* background-image: url("giphy-20.gif");
+    background-repeat: none;
+    background-attachment: scroll;
+    background-size:100%;
+  
+     */
+  
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .shelf {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+     
+    
+    
+  }
+  
+  img{
+    width: 300px;
+  }
+  
+  
+  .shelf .rock-spine {
+    background: white;
+    color: pink;
+  border-radius: 100px;
+  
+    padding:40px;
+   
+    
+    margin-bottom: 10px;
+    margin-right: 10px;
+    line-height: 30px;
+    font-size: 30px;
+  
+    cursor: pointer;
+  }
+  
+  .shelf .Paintings-spine.active {
+    background: grey;
+  }
+  
+  .shelf .Paintings-spine:hover {
+    background: red;
+  }
+  
+  .Paintings-detail {
+   display: inline-block;
+  }
+  
+  .Paintings-detail .figure {
+    width: 200px;
+    flex: none;
+    margin-right: 30px;
+  }
+  
+  .Paintings-detail .cover-image {
+    width: 100%;
+    border: 5px solid grey;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .Paintings-detail .artist {
+    max-width: 600px;
+  
+  }
+  
+  .Paintings-detail .year {
+    
+    text-transform: uppercase;
+    margin-top: 0;
+    color:white;
+    font-size:50px
+    
+  }
+  
+  .Paintings-detail .pic {
+    margin-top: 0.5em;
+    
+     color:white;
+    font-size:35px
+  
+    
+  }
+  
+  @media (max-width: 600px) {
+    .rock-detail {
+      flex-direction: column;
+    }
+    .rock-detail .figure {
+     
+      max-width: 300px;
+      margin: auto;
+      margin-bottom: 2em;
+      justify-content:center;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .rock-detail {
+      flex-direction: column;
+    }
+    .rock-detail .figure {
+      
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 2em;
+      text-align: center;
+    }
+  }
