@@ -12,7 +12,7 @@ var base = new Airtable({ apiKey: "keyifRwUVRaDhOFrF" }).base("appJfbq6NLTEmiN2B
 
 
 //get the "rocks" table from the base, select ALL the records, and specify the functions that will receive the data
-base("impressionist").select({}).eachPage(gotPageOfpaintings, gotAllpaintings);
+base("impressionist").select({ view: "by_year" }).eachPage(gotPageOfpaintings, gotAllpaintings);
 
 // an empty array to hold our book data
 const paintings = [];
@@ -59,10 +59,11 @@ function showPaintings() {
     console.log("paintings", paintings);
 
 
+
     const buttons = paintings.map((painting, index) => {
         const button = document.createElement('button');
         button.classList.add('button');
-        button.append(humanize(index));
+        button.append(painting.fields.year);
 
         button.addEventListener('click', () => {
             // transition out other slides, then remove them
@@ -127,8 +128,16 @@ function showPaintings() {
 
 
 
+            var imglocation = document.createElement("h2")
+
+            imglocation.classList.add("location");
+
+            imglocation.innerText = painting.fields.location;
+
+
+
             // append everything
-            paintingContainer.append(Artist, PaintingName, YearPainting, imgPainting);
+            paintingContainer.append(Artist, PaintingName, YearPainting, imgPainting, imglocation);
             slide.append(paintingContainer);
             const viewer = document.querySelector('.viewer');
             viewer.insertBefore(slide, viewer.firstChild).focus();

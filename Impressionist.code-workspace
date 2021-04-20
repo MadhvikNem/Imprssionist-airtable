@@ -1,0 +1,14 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/timeline-master/dist"
+		},
+		{
+			"path": "../../../Downloads/timeline-master/src"
+		}
+	],
+    "settings": {}
+}

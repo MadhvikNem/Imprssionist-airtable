@@ -6,16 +6,32 @@
    
   } */
 
-body {
-    background-color: rgb(240, 226, 163);
+#container2 {
+    width: 1250px;
+    border: 5px solid rgb(214, 60, 60);
+    height: 80px;
+    border-radius: 100px;
+    overflow-x: scroll;
+}
+
+#wide-box {
+    /* 	border: 10px solid green; */
+    width: 1250px;
+    height: 70px;
+}
+
+.item {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #ccf;
 }
 
 .viewer {
     width: 1250px;
     height: 900px;
-    border: 10px solid rgb(255, 255, 255);
-    background-color: rgb(211, 211, 211);
-    border-radius: 50px;
+    border: 5px solid rgb(55, 112, 158);
+    border-radius: 100px;
     position: relative;
     overflow: hidden;
 }
@@ -24,13 +40,13 @@ body {
     position: absolute;
     width: 1250px;
     height: 900px;
-    top: 1300px;
+    bottom: 1300px;
     transition: 1.5s all;
     align-items: center;
 }
 
 .slide.show {
-    top: 0px;
+    bottom: 0px;
 }
 
 .button {
@@ -38,14 +54,16 @@ body {
     font-weight: lighter;
     font-size: 20px;
     text-align: left;
-    border: 10px;
-    border-color: rgb(252, 175, 82);
+    border: 5px solid;
+    border-color: rgb(255, 230, 0);
     border-radius: 50%;
     align-items: left;
     padding: 1rem;
-    margin: 5px;
+    margin: 10px;
     color: rgb(255, 255, 255);
-    background-color: rgb(152, 202, 151);
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    overflow-x: scroll;
 }
 
 @font-face {
@@ -55,42 +73,55 @@ body {
 
 h1 {
     font-family: 'MyWebFont';
+    border: 5px solid rgb(55, 112, 158);
+    border-radius: 140px;
     font-style: bolder;
-    font-size: 200px;
-    color: rgb(55, 112, 158);
-    text-align: left;
+    font-size: 150px;
+    color: rgb(0, 0, 0);
+    padding: 1%;
+    text-align: center;
     margin: 2px;
     line-height: 70%;
-    opacity: 90%;
+    opacity: 100%;
+    border-width: 50%;
+    width: 80%;
 }
 
 p {
     font-family: 'MyWebFont';
     font-style: lighter;
-    font-size: 70px;
-    color: rgb(255, 255, 255);
-    text-align: left;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    border: 5px solid rgb(255, 83, 83);
+    border-radius: 100px;
+    text-align: center;
     margin: 2px;
-    line-height: 94%;
+    padding: 1%;
+    line-height: 84%;
     opacity: 90%;
+    width: 75%;
 }
 
 a {
     font-family: 'MyWebFont';
     font-style: lighter;
-    font-size: 70px;
-    color: rgb(70, 70, 70);
-    text-align: left;
-    align-self: left;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    align-self: center;
     margin: 2px;
     opacity: 90%;
+    border: 5px solid rgb(255, 208, 0);
+    border-radius: 100px;
+    padding: 1%;
+    text-decoration: none;
 }
 
 h2 {
     font-family: 'MyWebFont';
     font-style: lighter;
-    font-size: 70px;
-    color: rgb(180, 180, 180);
+    font-size: 60px;
+    color: rgb(255, 255, 255);
     text-align: left;
     align-self: left;
     margin: 2px;
@@ -103,8 +134,8 @@ h2 {
 b {
     font-family: 'MyWebFont';
     font-style: lighter;
-    font-size: 50px;
-    color: rgb(233, 227, 173);
+    font-size: 40px;
+    color: rgb(255, 255, 255);
     text-align: left;
     align-self: left;
     margin: 2px;
@@ -116,24 +147,24 @@ b {
 
 body {
     font-family: europa, sans-serif;
-    background: rgb(248, 128, 128);
+    background: rgb(255, 255, 255);
     text-align: center;
-    /* background-image: url("giphy-20.gif");
+    background-image: url("7c483d54182227.59512cee6fd1e.gif");
     background-repeat: none;
     background-attachment: scroll;
-    background-size:100%; */
+    background-size: 100%;
 }
 
 .painting-container {
     padding: 5rem;
-    border: 0px solid rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border: 5px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 150px;
     margin: 50px;
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns: 1fr 2fr;
-    line-height: 500%;
+    grid-template-columns: 1fr 1fr 1fr;
+    line-height: 400%;
 }
 
 .pic {
