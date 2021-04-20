@@ -137,7 +137,7 @@ function showPaintings() {
 
 
             // append everything
-            paintingContainer.append(Artist, PaintingName, YearPainting, imgPainting, imglocation);
+            paintingContainer.append(Artist, PaintingName, imglocation, imgPainting);
             slide.append(paintingContainer);
             const viewer = document.querySelector('.viewer');
             viewer.insertBefore(slide, viewer.firstChild).focus();
